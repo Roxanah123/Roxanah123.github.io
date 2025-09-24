@@ -10,13 +10,12 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #f5f5f5;
-  padding-top: 70px; /* deja espacio para la barra fija */
 }
 
 /* Menú de Navegación */
 .navbar {
   background: #2c3e50;
-  position: fixed;
+  position: sticky;   /* este lo modifique */
   width: 100%;
   top: 0;
   z-index: 1000;
@@ -122,4 +121,9 @@ a[href*="wa.me"] {
 
 a[href*="wa.me"]:hover {
   background: #20b958;
+}
+
+/* Ocultar el link de la página actual */
+.nav-menu a.active {
+  display: none;
 }
